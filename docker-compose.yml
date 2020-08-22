@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+  db: #postgresql
+    ports:
+      - "5432:5432"
+    image: postgres:11.4-alpine
+    environment:
+      POSTGRES_USER: covid
+      POSTGRES_PASSWORD: Covid123
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
