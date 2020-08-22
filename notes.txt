@@ -1,0 +1,29 @@
+
+Track COVID-19 data virtually
+    A. Track Current Nation Data (class or arbitrary function?)
+        Fields: date, date checked, positive, death, hospitalizedCumulative, recovered
+        
+    
+    B. Track Current State Data (class)
+        Fields: dateModified, deathConfirmed, positive, state date 
+
+
+Process: 
+1. install dependencies ( request, flask, urllib, venv, psycopg2, anything else?) ✅
+
+2. parse the returned python list so that the console displays current status of 
+the nation and its fields listed in A un-jsonified. ✅
+    - write a format function to handle this : store url in variable, function formats vriable and prints in form format ✅
+
+3. Create a class, functions to handle transformation 
+
+4. create and connect to postgresql database 
+    (make db and create target fields for app to fill)
+
+*5. create a second file (ingest.py) which will transform and send the data to postgresdb
+    - this must include psycopg driver, create table , 
+    fill table ,cursors and commit and closing the connection*
+
+
+5. test and then prep for airflow and automation. 
+
