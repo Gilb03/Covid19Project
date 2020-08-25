@@ -2,8 +2,8 @@ import psycopg2
 import covid
 
 
-conn = psycopg2.connect(dbname="covid_data", 
-                        user="postgres", password="postgres", port=5432)
+conn = psycopg2.connect(database="covid_data", 
+                        user="postgres", password="Bobobones31$", host="127.0.0.1")
 conn.set_session(autocommit=True)
 
 cur = conn.cursor()

@@ -1,7 +1,7 @@
 import requests
 from urllib.parse import urlencode, urlparse, quote_plus
 import json
-import csv
+# import 
 
 # API REQUEST AND RESPONSE WRITTEN TO A PYTHON DICTIONARY
 url = 'https://api.covidtracking.com/v1/us/current.json'
@@ -9,10 +9,12 @@ response = requests.get(
     url,
     headers={"Application": "application/json"}
 ).json()
+data = response[0]
+input_data = data
 
 # FORMAT FOR HUMANS
 
-data = response[0]
+
 
 
 
@@ -33,22 +35,60 @@ class Covid:
         self.total = input_data['total']
         self.deathIncrease = input_data['deathIncrease']
 
-    def args_str(self, url_args):
-        if self.params:
-            for k, v in self.params.items():
-                url_args[k] = v
-            return urlencode(url_args)
-
+        
+        
 
 cov = Covid(data)
-print(cov.hash)
-print(cov.date)
-print(cov.states)
-print(cov.positive)
-print(cov.hospitalizedCumulative)
-print(cov.recovered)
-print(cov.dateChecked)
-print(cov.death)
-print(cov.lastModified)
-print(cov.total)
-print(cov.deathIncrease)
+
+
+def fetch_h():
+    print(cov.hash)
+fetch_h()
+  
+def fetch_d():
+    print(cov.date)   
+fetch_d()
+    
+def fetch_s():
+    print(cov.states)
+fetch_s()
+    
+def fetch_p():
+    print(cov.positive)
+fetch_p()
+    
+def fetch_hc():
+    print(cov.hospitalizedCumulative)
+fetch_hc()
+
+def fetch_r():
+    print(cov.recovered)
+fetch_r()
+    
+def fetch_dc():
+    print(cov.dateChecked)
+fetch_dc()
+  
+def fetch_dt():
+    print(cov.death)
+fetch_dt()
+    
+def fetch_lm():
+    print(cov.lastModified)
+fetch_lm()
+    
+def fetch_t():
+    print(cov.total)
+fetch_t()
+    
+def fetch_di():
+    print(cov.deathIncrease)   
+fetch_di()
+    
+#def save_to_db(fetch_di, fetch_t, fetch_lm,
+#               fetch_dt, fetch_dc, fetch_r,
+#               fetch_hc, fetch_p, fetch_s,
+#               fetch_d,fetch_h ):
+#    
+#    print("this is going todb ")
+# save_to_db()
