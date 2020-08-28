@@ -47,7 +47,7 @@ with open('log.csv', 'a', newline='') as fd:
               ]
     writer = csv.DictWriter(fd, fieldnames=fieldnames)
     writer.writerow(cov)
-    
+#to_string(cov)  
 
 
     
