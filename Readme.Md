@@ -4,7 +4,7 @@ To learn more about tools used to capture data and use it to better understandin
 # About
 This project is about tracking and drawing insights from Covid-19 data. Categories include positive, hospitalized, death, recovered, in ICU, and about 16 other KPI's. The start date of the tracking is January 22nd, 2020. 
 
-Currently, there are 256 records, showing an increase in field fulfillment as more and more cases and states are reporting their data. This repository is updated between 5p and 7:30 CST weekly. 
+Currently, there are 273 records, showing an increase in field fulfillment as more and more cases and states are reporting their data. This repository is updated between 5p and 7:30 CST weekly. 
 
 
 # The Source 🔌
