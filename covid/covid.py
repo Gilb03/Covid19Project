@@ -5,8 +5,8 @@ import csv
  
 JSON_URL = 'https://api.covidtracking.com/v1/us/current.json'
 response = requests.get(JSON_URL, headers={"Accept":"application/json"}).json()
-data = response[0]
-cov = data 
+cov = response[0]
+
 
 file_path = path.relpath("log/log.csv")
 with open(file_path, 'a', newline='') as fd:
