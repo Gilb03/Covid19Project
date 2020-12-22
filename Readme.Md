@@ -9,3 +9,6 @@ Currently, there are about 322 records, showing an increase in field fulfillment
 
 # The Source 🔌
 The source of this information is from each state local/territorial public health authorities, official press conferences with the governor, and public health authorities. Also can be found <a href="https://covidtracking.com/about-data/sources">Here</a>
+
+# Author 
+Gilbert King III,  M.A.

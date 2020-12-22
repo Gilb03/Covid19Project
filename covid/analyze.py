@@ -1,3 +1,4 @@
+#this is gonna be the jupyter notebook
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -13,4 +14,3 @@ plt.show()
 hc['deathIncrease'].hist()
 plt.show()
 
-#this is gonna be the jupyter notebook
