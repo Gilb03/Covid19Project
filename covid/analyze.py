@@ -1,4 +1,4 @@
-#this is gonna be the jupyter notebook
+#Make a dashboard out of this file and deploy it
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
