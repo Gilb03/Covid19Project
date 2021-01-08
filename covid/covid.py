@@ -8,7 +8,7 @@ response = requests.get(JSON_URL, headers={"Accept":"application/json"}).json()
 cov = response[0]
 
 
-file_path = path.relpath("log/log.csv")
+file_path = path.relpath("data/log.csv")
 with open(file_path, 'a', newline='') as fd:
     fieldnames = ['date','states','positive','negative','pending',
               'hospitalizedCurrently','hospitalizedCumulative','inIcuCurrently',
