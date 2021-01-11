@@ -18,8 +18,8 @@ colors = {
     'text': '#7FDBFF'
 }
 
-#CONFIGURE FIRST GRAPH
-fig = px.scatter(df, x='date', y='death')
+
+fig = px.line(df, x='date', y='death')
 
 fig.update_layout(
     plot_bgcolor=colors['background'],
