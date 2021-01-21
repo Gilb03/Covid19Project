@@ -9,7 +9,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 
 
-#IMPORT STYLE AND DATA 
+
 df = pd.read_csv('data/log.csv')
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
@@ -19,7 +19,8 @@ colors = {
 }
 
 
-fig = px.line(df, x='date', y='death')
+
+fig = px.line(df, x=df['date'], y='death')
 
 fig.update_layout(
     plot_bgcolor=colors['background'],
